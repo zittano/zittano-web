@@ -175,6 +175,39 @@ header.scrolled{border-bottom-color:var(--line)}
 .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
 .ph:hover img{transform:scale(1.04)}
 
+.garantia{padding-bottom:56px}
+.gar-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.gar-list{list-style:none;display:grid;gap:14px}
+.gar-list li{display:flex;gap:14px;align-items:flex-start;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.gar-list .ic{flex:none;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:#e3f3ea;color:var(--green)}
+.gar-list .ic svg{width:20px;height:20px}
+.gar-list h3{font-family:var(--sans);font-weight:700;font-size:1.02rem;color:var(--ink);margin-bottom:4px}
+.gar-list p{color:var(--muted);font-size:.95rem;margin:0}
+.track{background:var(--white);border:1px solid var(--line-2);border-radius:24px;padding:26px;box-shadow:0 18px 40px rgba(22,33,58,.08)}
+.track-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.track-top b{font-family:var(--serif);font-weight:500;font-size:1.3rem;color:var(--ink)}
+.track-top span{font-size:.75rem;font-weight:600;color:var(--green);background:#e3f3ea;border-radius:999px;padding:5px 10px}
+.track small{color:var(--muted);font-size:.85rem}
+.track ol{list-style:none;margin:20px 0 0;display:grid;gap:0}
+.track li{display:flex;gap:12px;align-items:center;padding:9px 0;position:relative;color:var(--muted);font-size:.95rem}
+.track li:not(:last-child):after{content:"";position:absolute;left:11px;top:31px;height:14px;border-left:2px solid var(--line-2)}
+.track .dot{flex:none;width:24px;height:24px;border-radius:50%;border:2px solid var(--line-2);display:grid;place-items:center;font-size:.7rem;color:#fff}
+.track .ok{color:var(--ink)}.track .ok .dot{background:var(--green);border-color:var(--green)}
+.track .now{color:var(--ink);font-weight:700}.track .now .dot{border-color:var(--green);box-shadow:0 0 0 4px #e3f3ea}
+.track-cap{margin-top:16px;text-align:center;font-size:.9rem;color:var(--muted)}
+@media (max-width:860px){.gar-grid{grid-template-columns:1fr;gap:28px}}
+.tano-band{padding:8px 0 40px}
+.tano-card{display:flex;align-items:center;justify-content:space-between;gap:24px;background:var(--blue);color:#fff;border-radius:24px;padding:32px 40px;position:relative;overflow:hidden}
+.tano-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:linear-gradient(var(--green) 0 33.3%,#fff 0 66.6%,var(--red) 0)}
+.tano-card .eyebrow{color:#b9c8ea;margin-bottom:8px}
+.tano-card h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15;color:#fff;margin:0}
+.tano-card h2 em{color:#ffd77a}
+.tano-card p{margin:10px 0 0;color:#dbe3f5;max-width:520px}
+.tano-card .btn{background:#fff;color:var(--blue);flex:none}
+.tano-card .btn:hover{transform:translateY(-2px)}
+.hero-test{margin-top:10px;font-size:.95rem;color:var(--muted)}
+.hero-test a{color:var(--blue);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:760px){.tano-card{flex-direction:column;align-items:flex-start;padding:28px 24px 28px 30px}.tano-card .btn{width:100%}}
 .gal-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px 20px;margin-top:44px}
 .gal-foot p{font-family:var(--serif);font-size:1.4rem;color:var(--ink)}
 .more-gal{display:none}
@@ -364,6 +397,7 @@ footer a:hover{color:var(--ink)}
       <button class="btn btn-wa" type="submit"><svg><use href="#wa"/></svg>Consultar por WhatsApp</button>
     </form>
     <p class="finder-note reveal">Te responde una persona del equipo, no un bot.</p>
+    <p class="hero-test reveal">¿Todavía no sabés si te corresponde? <a href="/test.html">Hacé el Tanómetro gratis</a></p>
 
     <div class="trust reveal">
       <span><svg><use href="#shield"/></svg>Presupuesto claro, sin sorpresas</span>
@@ -457,6 +491,53 @@ footer a:hover{color:var(--ink)}
   </div>
 </section>
 
+<!-- GARANTIA -->
+<section id="garantia" class="garantia">
+  <div class="wrap">
+    <div class="head center">
+      <div class="eyebrow reveal">Garantía Zittano</div>
+      <h2 class="reveal">Tu tranquilidad, <em>de principio a fin.</em></h2>
+      <p class="sub reveal">Lo que te prometemos desde el primer día, y cumplimos hasta que tenés tu ciudadanía.</p>
+    </div>
+    <div class="gar-grid">
+      <ul class="gar-list reveal">
+        <li><span class="ic"><svg><use href="#shield"/></svg></span><div><h3>Presupuesto claro, sin sorpresas</h3><p>Sabés desde el principio cuánto cuesta cada etapa. Nada de costos escondidos.</p></div></li>
+        <li><span class="ic"><svg><use href="#ck"/></svg></span><div><h3>Pagás a medida que avanzamos</h3><p>Los honorarios se abonan por etapas, a medida que tu carpeta avanza.</p></div></li>
+        <li><span class="ic"><svg><use href="#user"/></svg></span><div><h3>Una persona real del otro lado</h3><p>Te responde alguien del equipo que conoce tu caso, no un bot.</p></div></li>
+        <li><span class="ic"><svg><use href="#doc"/></svg></span><div><h3>Tu trámite, a la vista</h3><p>Cada cliente tiene su propio link de seguimiento personalizado. Ves en qué etapa está tu carpeta, cuando quieras.</p></div></li>
+      </ul>
+      <div class="reveal">
+        <div class="track" aria-label="Ejemplo del portal de seguimiento">
+          <div class="track-top"><b>Tu carpeta</b><span>En curso</span></div>
+          <small>seguimiento.zittano.com.ar</small>
+          <ol>
+            <li class="ok"><span class="dot">✓</span>Consulta inicial</li>
+            <li class="ok"><span class="dot">✓</span>Presupuesto y árbol</li>
+            <li class="now"><span class="dot"></span>Actas y traducciones</li>
+            <li><span class="dot"></span>Turno consular</li>
+            <li><span class="dot"></span>¡Sos italiano!</li>
+          </ol>
+        </div>
+        <p class="track-cap">Así ves tu trámite en nuestro portal de seguimiento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TANOMETRO -->
+<section class="tano-band">
+  <div class="wrap">
+    <div class="tano-card reveal">
+      <div>
+        <div class="eyebrow">El Tanómetro · test gratis</div>
+        <h2>¿No sabés si te corresponde? <em>Descubrilo jugando.</em></h2>
+        <p>Respondé unas preguntas sobre tu familia y te decimos qué tan tano sos y si podrías tramitar la ciudadanía. Al final te llevás un regalo de Zittano.</p>
+      </div>
+      <a class="btn" href="/test.html">Hacer el test →</a>
+    </div>
+  </div>
+</section>
+
 <!-- NOSOTROS -->
 <section id="nosotros">
   <div class="wrap nos">
@@ -470,9 +551,9 @@ footer a:hover{color:var(--ink)}
       <div class="eyebrow">Cómo trabajamos</div>
       <h2>Cerca tuyo, <em>en cada paso.</em></h2>
       <ul class="list" style="margin-top:28px">
-        <li><div class="ck"><svg><use href="#ck"/></svg></div><div><b>Presupuesto claro, sin sorpresas</b><span>Sabés desde el inicio qué incluye y cuánto cuesta.</span></div></li>
+        <li><div class="ck"><svg><use href="#ck"/></svg></div><div><b>Pioneros desde 2014</b><span>Más de 12 años abriendo camino en ciudadanía italiana.</span></div></li>
         <li><div class="ck"><svg><use href="#ck"/></svg></div><div><b>Equipo de abogados y gestores</b><span>Que sigue tu carpeta de cerca y te responde.</span></div></li>
-        <li><div class="ck"><svg><use href="#ck"/></svg></div><div><b>Siempre informado</b><span>Te contamos en qué etapa está tu trámite y qué sigue.</span></div></li>
+        <li><div class="ck"><svg><use href="#ck"/></svg></div><div><b>Todo lo italiano, en un lugar</b><span>Ciudadanía, pasaporte, AIRE, SPID, CIE y más, con el mismo equipo.</span></div></li>
         <li><div class="ck"><svg><use href="#ck"/></svg></div><div><b>Todo el país</b><span>Acompañamos familias de toda la Argentina, ante el consulado que les toque.</span></div></li>
       </ul>
     </div>
