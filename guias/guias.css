@@ -58,3 +58,8 @@ footer{padding:44px 0 36px;font-size:.92rem;color:var(--muted);border-top:1px so
 footer a{color:var(--muted)}
 footer img{width:120px}
 @media (max-width:760px){.menu a:not(.btn){display:none}.cta{padding:28px 22px}body{font-size:16.5px}}
+article table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:6px 0 18px;font-size:.95rem}
+article th{text-align:left;background:var(--cream-2);color:var(--ink);font-weight:600;padding:10px 14px}
+article td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
+article td:first-child{white-space:nowrap;color:var(--ink)}
+@media (max-width:760px){article td:first-child{white-space:normal}article table{font-size:.88rem}}
